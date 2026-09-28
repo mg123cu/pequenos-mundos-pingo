@@ -26,5 +26,5 @@ export function makeLevel(n){
  const spikes=[]; if(n>=4){for(let j=2;j<width-1;j+=n>=8?2:3) spikes.push({x:xs[j]+95,y:414,w:42,h:16});}
  const enemies=[]; for(let j=1;j<width-1;j++){if(j%(n<=2?3:2)===0)enemies.push({x:xs[j]+82,y:platforms[j].y-26,min:xs[j]+12,max:xs[j]+platforms[j].w-40,type:(j+i)%3});}
  const checkpoints=n>=3?[Math.floor(length*.53)]:[];
- return {number:n,name:THEMES[i].name,theme:THEMES[i],length,platforms,spikes,enemies,checkpoints,goalX:length-105,boss:n===10?{x:xs.at(-1)+35,y:318,w:112,h:112,hp:3}:null};
+ return {number:n,name:THEMES[i].name,theme:THEMES[i],length,platforms,spikes,enemies,checkpoints,goalX:length-105,boss:n===10?{x:xs.at(-1)+35,y:240,w:190,h:190,hp:3}:null};
 }
