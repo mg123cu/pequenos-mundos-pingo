@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10172a"><title>Pequenos Mundos — Aventura de Pingo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="brand"><span class="brand-mark">✦</span><div><h1>PEQUENOS MUNDOS</h1><p>UMA AVENTURA DE PINGO</p></div></div><div class="header-note">✿ &nbsp; 10 mundos · uma grande jornada</div></header>
+    <section class="game-wrap" aria-label="Jogo de plataforma">
+      <canvas id="game" width="960" height="540" aria-label="Jogo: use as setas ou A e D para andar, espaço para pular"></canvas>
+      <div class="overlay" id="overlay"><div class="card"><div class="card-icon">✹</div><p class="eyebrow">UMA AVENTURA EM 10 CAPÍTULOS</p><h2 id="overlayTitle">O vale está acordando.</h2><p id="overlayText">Ajude Pingo, uma bolinha de luz, a atravessar os Pequenos Mundos e iluminar o caminho de volta.</p><button id="startButton">COMEÇAR A AVENTURA <span>→</span></button><div class="card-hint">Setas / A D para andar <i>·</i> Espaço / ↑ para pular</div></div></div>
+    </section>
+    <footer><div class="keys"><span class="key">←</span><span class="key">→</span><span>mover</span><span class="key key-wide">SPACE</span><span>pular</span><span class="key key-wide">CLIQUE</span><span>atacar com espada</span></div><div class="footer-right"><span>feito de luz, pixels e carinho</span><button id="soundButton" title="Ativar ou desativar sons" aria-label="Ativar ou desativar sons">♫</button></div></footer>
+  </main>
+  <script type="module" src="src/game.js"></script>
+</body>
+</html>
